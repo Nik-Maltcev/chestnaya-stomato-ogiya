@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Честная стоматология — фирменная концепция</title>
+  <meta name="description" content="Стоматология без навязанных услуг и скрытых платежей. Фиксируем смету в договоре до начала лечения. 3D-диагностика, микроскоп Zeiss, гарантия до 10 лет. Москва, м. Белорусская.">
+  <meta property="og:title" content="Честная стоматология — смета не меняется">
+  <meta property="og:description" content="Фиксируем план и стоимость лечения в договоре до начала процедур. Если лечение сложнее — расходы берём на себя.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/hero-clinic.png">
+  <meta name="theme-color" content="#06365d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a2540'/%3E%3Cpath d='M32 18c-5-4.6-11.6-6-16-3.4C10.4 17.8 8 23.4 9 29.6c.9 5.6 2.7 9.6 3.6 15 .9 5.4 1.2 12.9 4.8 13.5 3.6.6 4.5-6.6 6-11.7.9-3 2.1-5.4 5.6-5.4s4.7 2.4 5.6 5.4c1.5 5.1 2.4 12.3 6 11.7 3.6-.6 3.9-8.1 4.8-13.5.9-5.4 2.7-9.4 3.6-15 1-6.2-1.4-11.8-7-15-4.4-2.6-11-1.2-16 3.4z' fill='%2341befd'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-v2.css">
+  <link rel="stylesheet" href="css/versions.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="version-2">
+
+  <!-- ===== SVG icon sprite ===== -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-tooth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5.2c-1.6-1.5-3.7-2-5.2-1.2C4.9 5 4 6.9 4.3 9c.3 1.9.9 3.2 1.2 5 .3 1.8.4 4.3 1.6 4.5 1.2.2 1.5-2.2 2-3.9.3-1 .7-1.8 1.9-1.8s1.6.8 1.9 1.8c.5 1.7.8 4.1 2 3.9 1.2-.2 1.3-2.7 1.6-4.5.3-1.8.9-3.1 1.2-5 .3-2.1-.6-4-2.5-5-1.5-.8-3.6-.3-5.2 1.2Z"/>
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l7 2.8v5.4c0 4.5-3 7.6-7 9.3-4-1.7-7-4.8-7-9.3V5.8L12 3Z"/><path d="M9 11.6l2.2 2.2 4-4.4"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12.5l4.5 4.5L19 7.5"/>
+      </symbol>
+      <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/>
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+        <path d="M12 3.6l2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8L12 3.6Z"/>
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5.2 4h3.6l1.5 4.4-2.2 1.6a12.5 12.5 0 0 0 5.9 5.9l1.6-2.2L20 15.2v3.6a1.6 1.6 0 0 1-1.7 1.6C10.6 19.9 4.1 13.4 3.6 5.7A1.6 1.6 0 0 1 5.2 4Z"/>
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.2 2"/>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21.5s-6.8-5.6-6.8-10.8A6.8 6.8 0 0 1 12 4a6.8 6.8 0 0 1 6.8 6.7c0 5.2-6.8 10.8-6.8 10.8Z"/><circle cx="12" cy="10.6" r="2.4"/>
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7.5l8.5 6 8.5-6"/>
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M6 6l12 12M18 6L6 18"/>
+      </symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9.5l6 6 6-6"/>
+      </symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12h15M13.5 6l6 6-6 6"/>
+      </symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 19V5M6 11l6-6 6 6"/>
+      </symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M12 5v14M5 12h14"/>
+      </symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M5 12h14"/>
+      </symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="9" r="5"/><path d="M8.8 13.2L7.5 21l4.5-2.3L16.5 21l-1.3-7.8"/>
+      </symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4l1.7 4.3L18 10l-4.3 1.7L12 16l-1.7-4.3L6 10l4.3-1.7L12 4Z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2Z"/>
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4v11M7 11l5 5 5-5M4.5 20h15"/>
+      </symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="7.5" width="18" height="13" rx="2"/><path d="M8.5 7.5L10 5h4l1.5 2.5"/><circle cx="12" cy="13.5" r="3.4"/>
+      </symbol>
+      <symbol id="i-microscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9.5 3l4.5 4.5-2 2L7.5 5l2-2Z"/><path d="M12 9.5c2.9.5 4.8 2.7 4.8 5.4a5.9 5.9 0 0 1-5.9 5.9"/><path d="M5 21h14M10.9 15.5v5.5"/>
+      </symbol>
+      <symbol id="i-scan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 8V5.5A2.5 2.5 0 0 1 5.5 3H8M16 3h2.5A2.5 2.5 0 0 1 21 5.5V8M21 16v2.5a2.5 2.5 0 0 1-2.5 2.5H16M8 21H5.5A2.5 2.5 0 0 1 3 18.5V16"/><circle cx="12" cy="12" r="3.5"/>
+      </symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+        <path d="M9.8 6C6.6 7.1 4.5 9.7 4.5 13.2V18h6v-6H7.2c.2-1.9 1.2-3.1 3-3.9L9.8 6ZM19.3 6c-3.2 1.1-5.3 3.7-5.3 7.2V18h6v-6h-3.3c.2-1.9 1.2-3.1 3-3.9L19.3 6Z"/>
+      </symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/><circle cx="12" cy="15.5" r="1.4"/>
+      </symbol>
+      <symbol id="i-calc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 7h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/>
+      </symbol>
+      <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4v16M8.5 20h7M12 6L7 7.5M12 6l5 1.5"/><path d="M7 7.5L4 13a3 3 0 0 0 6 0L7 7.5ZM17 7.5L14 13a3 3 0 0 0 6 0l-3-5.5Z"/>
+      </symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.2 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/><path d="M7.5 12h2l1.2-2 2 4 1.2-2h2.6"/>
+      </symbol>
+      <symbol id="i-route" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/>
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 4h6v6M20 4L11 13"/><path d="M9 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3"/>
+      </symbol>
+      <symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>
+      </symbol>
+      <symbol id="i-stethoscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 3v5a4.5 4.5 0 0 0 9 0V3M7.5 3H5M14 3h-2.5M9.5 12.5v3a5 5 0 0 0 10 0v-1.6"/><circle cx="19.5" cy="11.5" r="2"/>
+      </symbol>
+      <symbol id="i-percent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 5L5 19"/><circle cx="7.5" cy="7.5" r="2.5"/><circle cx="16.5" cy="16.5" r="2.5"/>
+      </symbol>
+      <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.8h.01"/>
+      </symbol>
+      <symbol id="i-drag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 8l-3.5 4L9 16M15 8l3.5 4L15 16"/>
+      </symbol>
+      <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="8.5" r="3.2"/><path d="M3.5 19.5c.6-3 2.8-4.5 5.5-4.5s4.9 1.5 5.5 4.5M15.5 5.6a3.2 3.2 0 0 1 0 5.9M17.5 15.3c1.7.6 2.8 1.9 3.1 4.2"/>
+      </symbol>
+      <symbol id="i-sterile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3l7 2.8v5.4c0 4.5-3 7.6-7 9.3-4-1.7-7-4.8-7-9.3V5.8L12 3Z"/><path d="M12 8v6M9 11h6"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+    <div class="container header-inner">
+      <a class="brand" href="#main" data-scroll aria-label="Честная стоматология — на главную">
+        <span class="brand-badge brand-badge-logo"><img src="assets/img/brand-mark.png" alt="" width="565" height="230"></span>
+        <span class="brand-text">
+          <strong>Честная стоматология</strong>
+          <small>Стандарты открытости</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a class="nav-link is-active" href="#main" data-scroll data-section="main">Главная</a>
+        <a class="nav-link" href="#services-and-prices" data-scroll data-section="services-and-prices">Услуги и цены</a>
+        <a class="nav-link" href="#about-clinic" data-scroll data-section="about-clinic">О клинике</a>
+        <a class="nav-link" href="#doctors" data-scroll data-section="doctors">Врачи</a>
+        <a class="nav-link" href="#honest-reviews" data-scroll data-section="honest-reviews">Отзывы</a>
+        <a class="nav-link" href="#contacts" data-scroll data-section="contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <div class="header-contacts">
+          <span class="header-hours"><i class="dot" aria-hidden="true"></i>Ежедневно 09:00 — 21:00</span>
+          <a class="header-phone" href="tel:+74958904422">+7 (495) 890-44-22</a>
+        </div>
+        <a class="btn btn-primary header-cta" href="#contacts" data-scroll>Записаться</a>
+        <a class="icon-btn header-call" href="tel:+74958904422" aria-label="Позвонить в клинику"><svg class="icon"><use href="#i-phone"/></svg></a>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Mobile menu ===== -->
+  <div class="menu-overlay" id="menuOverlay" hidden></div>
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Мобильное меню">
+    <div class="mm-head">
+      <span class="brand">
+        <span class="brand-badge brand-badge-logo"><img src="assets/img/brand-mark.png" alt="" width="565" height="230"></span>
+        <span class="brand-text"><strong>Честная стоматология</strong><small>Стандарты открытости</small></span>
+      </span>
+      <button class="icon-btn" id="menuClose" type="button" aria-label="Закрыть меню"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <nav class="mm-nav" aria-label="Навигация по сайту">
+      <a class="mm-link" href="#main" data-scroll><span>Главная</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <a class="mm-link" href="#services-and-prices" data-scroll><span>Услуги и цены</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <a class="mm-link" href="#about-clinic" data-scroll><span>О клинике</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <a class="mm-link" href="#doctors" data-scroll><span>Врачи</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <a class="mm-link" href="#honest-reviews" data-scroll><span>Честные отзывы</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <a class="mm-link" href="#faq" data-scroll><span>Вопросы и ответы</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+      <a class="mm-link" href="#contacts" data-scroll><span>Контакты</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    </nav>
+    <div class="mm-footer">
+      <a class="mm-phone" href="tel:+74958904422">+7 (495) 890-44-22</a>
+      <span class="mm-hours"><svg class="icon"><use href="#i-clock"/></svg>Ежедневно 09:00 — 21:00</span>
+      <a class="btn btn-primary btn-block" href="#contacts" data-scroll>Записаться на прием</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="main" data-spy>
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="blob blob-a" data-parallax="0.12"></div>
+        <div class="blob blob-b" data-parallax="0.2"></div>
+        <div class="blob blob-c" data-parallax="0.08"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <img class="hero-identity reveal" src="assets/img/brand-wordmark.png" alt="Честная стоматология — рукопожатие как символ доверия" width="1010" height="485">
+          <div class="hero-badge reveal"><svg class="icon"><use href="#i-shield"/></svg><span>Честный подход · Договор с гарантией</span></div>
+          <h1 class="hero-title reveal" style="--d:.08s">Стоматология на принципах <span class="mark">честности и доверия</span></h1>
+          <p class="hero-lead reveal" style="--d:.16s">Фиксируем детальный план и итоговую стоимость лечения в договоре до начала любых процедур. Высокоточная 3D-диагностика, врачи высшей категории и бережное лечение под увеличением — без боли и стресса.</p>
+          <div class="hero-cta reveal" style="--d:.24s">
+            <a class="btn btn-primary btn-lg" href="#contacts" data-scroll><span>Записаться на консультацию</span><svg class="icon"><use href="#i-arrow-right"/></svg></a>
+            <a class="btn btn-light btn-lg" href="#services-and-prices" data-scroll><svg class="icon icon-accent"><use href="#i-calc"/></svg><span>Рассчитать смету онлайн</span></a>
+          </div>
+          <div class="trust-row reveal" style="--d:.32s">
+            <div class="trust-item">
+              <span class="trust-icon"><svg class="icon"><use href="#i-award"/></svg></span>
+              <span class="trust-text"><strong>Гарантия до 10 лет</strong><small>Официально в договоре</small></span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon"><svg class="icon"><use href="#i-lock"/></svg></span>
+              <span class="trust-text"><strong>0% скрытых доплат</strong><small>Все анестезии включены</small></span>
+            </div>
+            <div class="trust-item">
+              <span class="trust-icon"><svg class="icon"><use href="#i-scan"/></svg></span>
+              <span class="trust-text"><strong>КТ-диагностика 3D</strong><small>Прямо в клинике</small></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal" style="--d:.2s">
+          <div class="hero-card" data-parallax="-0.05">
+            <div class="hero-photo">
+              <img src="assets/img/hero-clinic.png" alt="Современный стоматологический кабинет с микроскопом Zeiss и панорамными окнами" width="1536" height="1024" fetchpriority="high">
+              <div class="hero-photo-shade" aria-hidden="true"></div>
+              <div class="live-badge"><i class="pulse-dot" aria-hidden="true"></i>Свободные окна на сегодня: <strong>&nbsp;3</strong></div>
+              <div class="hero-overlay-card">
+                <span class="hoc-icon"><svg class="icon"><use href="#i-stethoscope"/></svg></span>
+                <span class="hoc-text"><strong>Консилиум врачей</strong><small>Всегда 2 независимых мнения</small></span>
+                <span class="hoc-tag">100% прозрачно</span>
+              </div>
+            </div>
+          </div>
+          <div class="float-note reveal" style="--d:.45s">
+            <svg class="icon"><use href="#i-file"/></svg>
+            <div><strong>Смета не меняется</strong><small>Если лечение сложнее — мы берем расходы на себя</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="brands-strip" aria-label="Производители материалов и оборудования">
+        <span class="brands-label">Оригинальные материалы и оборудование</span>
+        <div class="marquee" data-marquee>
+          <div class="marquee-track">
+            <span>Straumann</span><i>◆</i><span>Carl Zeiss</span><i>◆</i><span>Ivoclar</span><i>◆</i><span>Tokuyama</span><i>◆</i><span>EMS GBT</span><i>◆</i><span>Damon</span><i>◆</i><span>Spark</span><i>◆</i><span>Dentium</span><i>◆</i>
+            <span>Straumann</span><i>◆</i><span>Carl Zeiss</span><i>◆</i><span>Ivoclar</span><i>◆</i><span>Tokuyama</span><i>◆</i><span>EMS GBT</span><i>◆</i><span>Damon</span><i>◆</i><span>Spark</span><i>◆</i><span>Dentium</span><i>◆</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Manifest ===== -->
+    <section class="section manifest" id="manifest">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head-text">
+            <span class="eyebrow"><svg class="icon"><use href="#i-shield"/></svg>Стандарты открытости</span>
+            <h2 class="section-title">Честный манифест: 4 нерушимых принципа</h2>
+            <p class="section-lead">Мы основали клинику в ответ на агрессивный маркетинг и скрытые доплаты, с которыми сталкивается каждый второй пациент. Вот как мы лечим.</p>
+          </div>
+          <span class="head-note"><svg class="icon"><use href="#i-scale"/></svg>Основано на принципах доказательной медицины</span>
+        </div>
+        <div class="pillars">
+          <article class="pillar reveal">
+            <span class="pillar-num" aria-hidden="true">01</span>
+            <span class="pillar-icon"><svg class="icon"><use href="#i-file"/></svg></span>
+            <span class="pillar-tag">Принцип №1</span>
+            <h3>Фиксированная смета до копейки</h3>
+            <p>Вы утверждаете смету до того, как сели в кресло врача. Никаких «дополнительных каналов» или «непредвиденных анестезий» в чеке на кассе.</p>
+            <span class="pillar-foot"><svg class="icon"><use href="#i-check-circle"/></svg>Фиксация в договоре</span>
+          </article>
+          <article class="pillar reveal" style="--d:.08s">
+            <span class="pillar-num" aria-hidden="true">02</span>
+            <span class="pillar-icon"><svg class="icon"><use href="#i-shield"/></svg></span>
+            <span class="pillar-tag">Принцип №2</span>
+            <h3>Спасаем свои зубы до последнего</h3>
+            <p>Никогда не удаляем зуб ради дорогой имплантации, если есть хоть 10% шанса сохранить живой корень с помощью стоматологического микроскопа.</p>
+            <span class="pillar-foot"><svg class="icon"><use href="#i-check-circle"/></svg>Органосохраняющий протокол</span>
+          </article>
+          <article class="pillar reveal" style="--d:.16s">
+            <span class="pillar-num" aria-hidden="true">03</span>
+            <span class="pillar-icon"><svg class="icon"><use href="#i-camera"/></svg></span>
+            <span class="pillar-tag">Принцип №3</span>
+            <h3>Фотопротокол каждого этапа</h3>
+            <p>Фиксируем макрофотографии до, во время препарирования и после лечения. Вы своими глазами видите проблему и результат выполненной работы.</p>
+            <span class="pillar-foot"><svg class="icon"><use href="#i-check-circle"/></svg>Полный фотоотчет в карту</span>
+          </article>
+          <article class="pillar reveal" style="--d:.24s">
+            <span class="pillar-num" aria-hidden="true">04</span>
+            <span class="pillar-icon"><svg class="icon"><use href="#i-microscope"/></svg></span>
+            <span class="pillar-tag">Принцип №4</span>
+            <h3>Оригинальные материалы мира</h3>
+            <p>Работаем только с сертифицированными производителями: Straumann (Швейцария), Ivoclar (Германия), Tokuyama (Япония). Выдаем сертификат подлинности.</p>
+            <span class="pillar-foot"><svg class="icon"><use href="#i-check-circle"/></svg>Паспорт изделия на руки</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services & prices ===== -->
+    <section class="section services" id="services-and-prices" data-spy>
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head-text">
+            <span class="eyebrow"><svg class="icon"><use href="#i-file"/></svg>Все включено без сносок</span>
+            <h2 class="section-title">Услуги и прозрачные фиксированные пакеты</h2>
+            <p class="section-lead">В цену входит все: работа врача, анестезия, расходные материалы, снимки и контрольные осмотры.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Фильтр услуг">
+            <button class="filter-btn is-active" type="button" data-filter="all">Все направления</button>
+            <button class="filter-btn" type="button" data-filter="implant">Имплантация</button>
+            <button class="filter-btn" type="button" data-filter="therapy">Терапия</button>
+            <button class="filter-btn" type="button" data-filter="ortho">Ортодонтия</button>
+            <button class="filter-btn" type="button" data-filter="esthetics">Эстетика</button>
+          </div>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          <article class="service-card reveal" data-cat="implant">
+            <div class="card-top">
+              <span class="chip">Хирургия и имплантация</span>
+              <span class="card-feature">Гарантия пожизненно</span>
+            </div>
+            <h3 class="service-title">Имплантация Dentium / Straumann «под ключ»</h3>
+            <p class="service-desc">Установка имплантата, формирователь десны, индивидуальный циркониевый абатмент и коронка.</p>
+            <ul class="check-list">
+              <li><svg class="icon"><use href="#i-check"/></svg>КТ-планирование и навигационный шаблон</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Оригинальная коронка из диоксида циркония</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Все контрольные осмотры и швы</li>
+            </ul>
+            <div class="price-row">
+              <div class="price"><small>Цена под ключ</small><strong>от 54 000 ₽</strong></div>
+              <button class="btn btn-primary btn-sm" type="button" data-service="implant">Выбрать</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="therapy" style="--d:.06s">
+            <div class="card-top">
+              <span class="chip">Терапия под микроскопом</span>
+              <span class="card-feature">Оптика Carl Zeiss</span>
+            </div>
+            <h3 class="service-title">Лечение сложного кариеса и пульпита</h3>
+            <p class="service-desc">Лечение корневых каналов с 30-кратным увеличением, изоляция коффердамом и анатомическая реставрация.</p>
+            <ul class="check-list">
+              <li><svg class="icon"><use href="#i-check"/></svg>Нанокомпозиты премиум-класса (Япония)</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Абсолютная изоляция системой OptiDam</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Рентген-контроль каждого канала</li>
+            </ul>
+            <div class="price-row">
+              <div class="price"><small>Цена под ключ</small><strong>от 6 800 ₽</strong></div>
+              <button class="btn btn-primary btn-sm" type="button" data-service="therapy">Выбрать</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="ortho" style="--d:.12s">
+            <div class="card-top">
+              <span class="chip">Ортодонтия</span>
+              <span class="card-feature">3D-моделирование</span>
+            </div>
+            <h3 class="service-title">Элайнеры и брекет-системы Damon</h3>
+            <p class="service-desc">Прозрачные каппы или самолигирующие брекеты с гарантированным результатом и контролем динамики.</p>
+            <ul class="check-list">
+              <li><svg class="icon"><use href="#i-check"/></svg>Цифровой сетап до начала курса</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Регулярные визиты и коррекции без доплат</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Ретенционный период и каппы в подарок</li>
+            </ul>
+            <div class="price-row">
+              <div class="price"><small>Цена под ключ</small><strong>от 135 000 ₽</strong></div>
+              <button class="btn btn-primary btn-sm" type="button" data-service="ortho">Выбрать</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="therapy">
+            <div class="card-top">
+              <span class="chip">Профилактика</span>
+              <span class="card-feature">Стандарт GBT (Швейцария)</span>
+            </div>
+            <h3 class="service-title">Комплексная гигиена AirFlow Prophylaxis Master</h3>
+            <p class="service-desc">Удаление камня ультразвуком без боли, бережная чистка порошком на основе эритритола и реминерализация.</p>
+            <ul class="check-list">
+              <li><svg class="icon"><use href="#i-check"/></svg>Индикатор скрытого зубного налета</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Глубокое фторирование эмали</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Подбор средств ухода для дома</li>
+            </ul>
+            <div class="price-row">
+              <div class="price"><small>Фиксированная цена</small><strong>5 900 ₽</strong></div>
+              <button class="btn btn-primary btn-sm" type="button" data-service="hygiene">Выбрать</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="esthetics" style="--d:.06s">
+            <div class="card-top">
+              <span class="chip">Эстетика</span>
+              <span class="card-feature">Микро-препарирование</span>
+            </div>
+            <h3 class="service-title">Керамические виниры E.max</h3>
+            <p class="service-desc">Ультратонкие пластины из немецкой полевошпатной керамики. Естественная прозрачность и прочность.</p>
+            <ul class="check-list">
+              <li><svg class="icon"><use href="#i-check"/></svg>Примерка будущей улыбки Mock-up</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Временные виниры на период изготовления</li>
+              <li><svg class="icon"><use href="#i-check"/></svg>Гарантия стабильности цвета 15 лет</li>
+            </ul>
+            <div class="price-row">
+              <div class="price"><small>За 1 единицу</small><strong>29 500 ₽</strong></div>
+              <button class="btn btn-primary btn-sm" type="button" data-service="veneers">Выбрать</button>
+            </div>
+          </article>
+
+          <!-- Calculator -->
+          <article class="calc-card reveal" style="--d:.12s" id="calculator">
+            <div class="card-top">
+              <span class="chip chip-sky">Калькулятор</span>
+              <svg class="icon calc-tune"><use href="#i-calc"/></svg>
+            </div>
+            <h3 class="service-title">Быстрый расчет сметы</h3>
+            <p class="calc-lead">Первичный осмотр — 0 ₽. Отметьте нужные этапы для мгновенной оценки:</p>
+            <div class="calc-items" id="calcItems">
+              <div class="calc-item" data-key="ct" data-price="3500">
+                <label class="calc-label">
+                  <input class="calc-check" type="checkbox" checked>
+                  <span class="calc-name">КТ-диагностика 3D</span>
+                  <span class="calc-price">3 500 ₽</span>
+                </label>
+              </div>
+              <div class="calc-item" data-key="hygiene" data-price="5900">
+                <label class="calc-label">
+                  <input class="calc-check" type="checkbox">
+                  <span class="calc-name">Комплексная гигиена GBT</span>
+                  <span class="calc-price">5 900 ₽</span>
+                </label>
+              </div>
+              <div class="calc-item" data-key="caries" data-price="6800" data-qty="1" data-max="6">
+                <label class="calc-label">
+                  <input class="calc-check" type="checkbox">
+                  <span class="calc-name">Лечение кариеса под микроскопом</span>
+                  <span class="calc-price">6 800 ₽</span>
+                </label>
+                <div class="stepper" aria-label="Количество зубов">
+                  <button class="step-btn" type="button" data-step="-1" aria-label="Убрать зуб" disabled><svg class="icon"><use href="#i-minus"/></svg></button>
+                  <span class="step-value">1</span>
+                  <button class="step-btn" type="button" data-step="1" aria-label="Добавить зуб" disabled><svg class="icon"><use href="#i-plus"/></svg></button>
+                </div>
+              </div>
+              <div class="calc-item" data-key="implant" data-price="54000" data-qty="1" data-max="4">
+                <label class="calc-label">
+                  <input class="calc-check" type="checkbox">
+                  <span class="calc-name">Имплантат «под ключ»</span>
+                  <span class="calc-price">54 000 ₽</span>
+                </label>
+                <div class="stepper" aria-label="Количество имплантатов">
+                  <button class="step-btn" type="button" data-step="-1" aria-label="Убрать имплантат" disabled><svg class="icon"><use href="#i-minus"/></svg></button>
+                  <span class="step-value">1</span>
+                  <button class="step-btn" type="button" data-step="1" aria-label="Добавить имплантат" disabled><svg class="icon"><use href="#i-plus"/></svg></button>
+                </div>
+              </div>
+              <div class="calc-item" data-key="veneer" data-price="29500" data-qty="1" data-max="10">
+                <label class="calc-label">
+                  <input class="calc-check" type="checkbox">
+                  <span class="calc-name">Винир E.max</span>
+                  <span class="calc-price">29 500 ₽</span>
+                </label>
+                <div class="stepper" aria-label="Количество виниров">
+                  <button class="step-btn" type="button" data-step="-1" aria-label="Убрать винир" disabled><svg class="icon"><use href="#i-minus"/></svg></button>
+                  <span class="step-value">1</span>
+                  <button class="step-btn" type="button" data-step="1" aria-label="Добавить винир" disabled><svg class="icon"><use href="#i-plus"/></svg></button>
+                </div>
+              </div>
+            </div>
+            <div class="calc-total-row">
+              <div class="calc-total">
+                <small>Примерная смета <span id="calcCount">· 1 позиция</span></small>
+                <strong id="calcTotal">3 500 ₽</strong>
+              </div>
+              <div class="calc-actions">
+                <button class="icon-btn icon-btn-sky" type="button" id="calcDownload" aria-label="Скачать смету текстовым файлом" title="Скачать смету"><svg class="icon"><use href="#i-download"/></svg></button>
+                <button class="btn btn-sky btn-sm" type="button" id="calcFix">Зафиксировать</button>
+              </div>
+            </div>
+            <p class="calc-note"><svg class="icon"><use href="#i-info"/></svg>Точную смету врач составит на бесплатной консультации и зафиксирует в договоре. План действует 30 дней.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About clinic (dark) ===== -->
+    <section class="section about" id="about-clinic" data-spy>
+      <div class="about-glow" aria-hidden="true"></div>
+      <div class="container about-grid">
+        <div class="about-sticky">
+          <span class="eyebrow eyebrow-light reveal"><svg class="icon"><use href="#i-heart"/></svg>О клинике</span>
+          <h2 class="section-title reveal" style="--d:.06s">Клиника, где смета — это документ, а не ориентир</h2>
+          <p class="about-lead reveal" style="--d:.12s">«Честная стоматология» работает с 2014 года. Мы убрали из прайса всё, что обычно дописывают мелким шрифтом: анестезию, снимки, формирователи десны и контрольные визиты. Один договор — одна цена — один результат.</p>
+          <figure class="about-photo reveal" style="--d:.18s">
+            <img src="assets/img/about-reception.png" alt="Светлая зона ресепшн клиники с зоной ожидания" width="1536" height="1024" loading="lazy">
+            <figcaption><svg class="icon"><use href="#i-pin"/></svg>Москва, ул. Клиническая, 14к2 · м. Белорусская</figcaption>
+          </figure>
+          <blockquote class="about-quote reveal" style="--d:.24s">
+            <svg class="icon"><use href="#i-quote"/></svg>
+            <p>«Пациент должен понимать, за что платит, ещё до того, как сел в кресло. Это и есть вся наша бизнес-модель».</p>
+            <cite>Дмитрий Соколов, главный врач</cite>
+          </blockquote>
+        </div>
+        <div class="about-flow">
+          <div class="stats-grid reveal">
+            <div class="stat"><span class="stat-num"><span data-count="12">0</span></span><span class="stat-label">лет клинике</span></div>
+            <div class="stat"><span class="stat-num"><span data-count="14800">0</span>+</span><span class="stat-label">пациентов вылечено</span></div>
+            <div class="stat"><span class="stat-num"><span data-count="6500">0</span>+</span><span class="stat-label">имплантатов установлено</span></div>
+            <div class="stat"><span class="stat-num"><span data-count="4.9" data-decimals="1">0</span></span><span class="stat-label">средний рейтинг клиник</span></div>
+          </div>
+
+          <div class="equip-list">
+            <h3 class="about-sub reveal">Оснащение по мировым стандартам</h3>
+            <div class="equip-item reveal">
+              <span class="equip-icon"><svg class="icon"><use href="#i-scan"/></svg></span>
+              <div><strong>3D-томограф Planmeca ProMax</strong><p>Снимок всей челюсти за 12 секунд с минимальной дозой облучения. Планирование имплантации с точностью до 0,1 мм.</p></div>
+            </div>
+            <div class="equip-item reveal" style="--d:.06s">
+              <span class="equip-icon"><svg class="icon"><use href="#i-microscope"/></svg></span>
+              <div><strong>Микроскоп Zeiss EXTARO 300</strong><p>30-кратное увеличение и флуоресцентный режим: врач видит трещины и скрытые каналы, которые не видно глазом.</p></div>
+            </div>
+            <div class="equip-item reveal" style="--d:.12s">
+              <span class="equip-icon"><svg class="icon"><use href="#i-sterile"/></svg></span>
+              <div><strong>Стерилизация класса B</strong><p>Автоклав европейского стандарта, программы «АнтиСПИД» и «АнтиГепатит». Каждый инструмент проходит 5 этапов обработки.</p></div>
+            </div>
+            <figure class="equip-photo reveal" style="--d:.18s">
+              <img src="assets/img/about-equipment.png" alt="Современный 3D-томограф для компьютерной томографии челюсти" width="1024" height="1024" loading="lazy">
+            </figure>
+          </div>
+
+          <div class="steps">
+            <h3 class="about-sub reveal">Как проходит визит</h3>
+            <ol class="steps-list">
+              <li class="step reveal"><span class="step-num">01</span><div><strong>Диагностика и фотопротокол</strong><p>Осмотр, КТ по показаниям, макрофотографии. Вы видите свою ситуацию на экране.</p></div></li>
+              <li class="step reveal" style="--d:.06s"><span class="step-num">02</span><div><strong>Смета в 2–3 вариантах</strong><p>Оптимальный, базовый и премиум-план под ваш бюджет. Без давления и «горящих предложений».</p></div></li>
+              <li class="step reveal" style="--d:.12s"><span class="step-num">03</span><div><strong>Договор с фиксированной ценой</strong><p>Подписываем план и стоимость. Если лечение окажется сложнее — разницу оплачивает клиника.</p></div></li>
+              <li class="step reveal" style="--d:.18s"><span class="step-num">04</span><div><strong>Лечение и гарантия</strong><p>Лечим под микроскопом, выдаем паспорт изделия и гарантийный талон до 10 лет.</p></div></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Doctors ===== -->
+    <section class="section doctors" id="doctors" data-spy>
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head-text">
+            <span class="eyebrow"><svg class="icon"><use href="#i-users"/></svg>Команда экспертов</span>
+            <h2 class="section-title">Врачи высшей категории без коммерческих планов</h2>
+            <p class="section-lead">У наших докторов нет финансового плана по выручке с пациента. Главный показатель работы врача — отсутствие осложнений и срок службы реставраций.</p>
+          </div>
+          <span class="head-note"><svg class="icon"><use href="#i-award"/></svg>Каждый врач проходит аттестацию раз в год</span>
+        </div>
+        <div class="doctors-grid">
+          <article class="doctor-card reveal">
+            <div class="doctor-photo">
+              <img src="assets/img/doctor-sokolov.png" alt="Дмитрий Александрович Соколов, главный врач и хирург-имплантолог" width="1024" height="1280" loading="lazy">
+              <span class="exp-badge">Стаж: 16 лет</span>
+            </div>
+            <div class="doctor-body">
+              <div class="doctor-role"><span>Главный врач · Хирург-имплантолог</span><svg class="icon"><use href="#i-shield"/></svg></div>
+              <h3 class="doctor-name">Дмитрий Александрович Соколов</h3>
+              <p class="doctor-desc">Установил более 6 500 имплантатов. Член Международной ассоциации ITI (Швейцария). Специалист по костной пластике любой сложности.</p>
+              <div class="slot-row"><span>Ближайшая запись</span><strong>Завтра, 14:30</strong></div>
+              <button class="btn btn-light btn-block" type="button" data-doctor="sokolov">Записаться к врачу</button>
+            </div>
+          </article>
+          <article class="doctor-card reveal" style="--d:.08s">
+            <div class="doctor-photo">
+              <img src="assets/img/doctor-voronova.png" alt="Елена Михайловна Воронова, стоматолог-терапевт и эндодонтист" width="1024" height="1280" loading="lazy">
+              <span class="exp-badge">Стаж: 12 лет</span>
+            </div>
+            <div class="doctor-body">
+              <div class="doctor-role"><span>Стоматолог-терапевт · Эндодонтист</span><svg class="icon"><use href="#i-shield"/></svg></div>
+              <h3 class="doctor-name">Елена Михайловна Воронова</h3>
+              <p class="doctor-desc">Эксперт в лечении под микроскопом. Специализируется на перелечивании безнадежных каналов и спасении разрушенных зубов.</p>
+              <div class="slot-row"><span>Ближайшая запись</span><strong>Пятница, 11:00</strong></div>
+              <button class="btn btn-light btn-block" type="button" data-doctor="voronova">Записаться к врачу</button>
+            </div>
+          </article>
+          <article class="doctor-card reveal" style="--d:.16s">
+            <div class="doctor-photo">
+              <img src="assets/img/doctor-kovalev.png" alt="Артем Сергеевич Ковалев, ведущий ортодонт и гнатолог" width="1024" height="1280" loading="lazy">
+              <span class="exp-badge">Стаж: 9 лет</span>
+            </div>
+            <div class="doctor-body">
+              <div class="doctor-role"><span>Ведущий ортодонт · Гнатолог</span><svg class="icon"><use href="#i-shield"/></svg></div>
+              <h3 class="doctor-name">Артем Сергеевич Ковалев</h3>
+              <p class="doctor-desc">Сертифицированный специалист по элайнерам Spark и брекетам Damon. Исправляет сложные нарушения прикуса с заботой о суставе ВНЧС.</p>
+              <div class="slot-row"><span>Ближайшая запись</span><strong>Суббота, 16:00</strong></div>
+              <button class="btn btn-light btn-block" type="button" data-doctor="kovalev">Записаться к врачу</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="section reviews" id="honest-reviews" data-spy>
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-head-text">
+            <span class="eyebrow"><svg class="icon"><use href="#i-star"/></svg>Подтвержденные результаты</span>
+            <h2 class="section-title">Честные отзывы и фотопротоколы лечения</h2>
+            <p class="section-lead">Настоящие истории пациентов со снимками, финальной стоимостью и отзывами без цензуры. Потяните ползунок на фото, чтобы сравнить «до» и «после».</p>
+          </div>
+        </div>
+
+        <div class="ratings-row reveal">
+          <div class="rating-chip"><strong>4.9</strong><span class="stars" aria-label="Рейтинг 4.9 из 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><small>Яндекс Карты · 312 отзывов</small></div>
+          <div class="rating-chip"><strong>5.0</strong><span class="stars" aria-label="Рейтинг 5 из 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><small>ПроДокторов · 187 отзывов</small></div>
+          <div class="rating-chip"><strong>4.8</strong><span class="stars" aria-label="Рейтинг 4.8 из 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><small>2ГИС · 96 отзывов</small></div>
+          <p class="ratings-note"><svg class="icon"><use href="#i-info"/></svg>Мы не удаляем критику и не заказываем отзывы. Каждый можно проверить по ссылке на источник.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card reveal">
+            <div class="compare" data-compare style="--pos:50%">
+              <img class="compare-img" src="assets/img/case1-before.png" alt="Зуб до лечения: глубокая кариозная полость разрушает 60% стенки" width="1024" height="768" loading="lazy">
+              <div class="compare-after">
+                <img class="compare-img" src="assets/img/case1-after.png" alt="Тот же зуб после восстановления керамической вкладкой" width="1024" height="768" loading="lazy">
+              </div>
+              <span class="compare-label label-before">До</span>
+              <span class="compare-label label-after">После</span>
+              <div class="compare-handle" aria-hidden="true"><span class="compare-grip"><svg class="icon"><use href="#i-drag"/></svg></span></div>
+              <input class="compare-range" type="range" min="0" max="100" value="50" step="0.5" aria-label="Сравнение фотографий до и после лечения">
+            </div>
+            <div class="case-captions"><span>Разрушение стенки на 60%</span><strong>Керамическая вкладка E.max</strong></div>
+            <div class="case-meta">
+              <span class="avatar" aria-hidden="true">МС</span>
+              <div class="case-person"><strong>Михаил Смирнов, 38 лет</strong><small>Лечащий врач: Воронова Е. М.</small></div>
+              <span class="stars" aria-label="Оценка 5 из 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="case-text">«В другой сетевой клинике мне категорически сказали: "удалять и ставить имплант за 95 тысяч". Пришел в "Честную" за вторым мнением. Елена Михайловна посмотрела под микроскопом и сказала: корень крепкий, спасем. В итоге сохранили родной зуб, цена сошлась со сметой копейка в копейку — 24 500 ₽ за всю работу!»</p>
+            <div class="case-foot">
+              <span class="case-source"><svg class="icon"><use href="#i-shield"/></svg>Проверенный отзыв с Яндекс.Карт</span>
+              <strong class="case-total">Итог: 24 500 ₽</strong>
+            </div>
+          </article>
+
+          <article class="case-card reveal" style="--d:.1s">
+            <div class="compare" data-compare style="--pos:50%">
+              <img class="compare-img" src="assets/img/case2-before.png" alt="До имплантации: отсутствует премоляр, пустое место в зубном ряду" width="1024" height="768" loading="lazy">
+              <div class="compare-after">
+                <img class="compare-img" src="assets/img/case2-after.png" alt="После имплантации: циркониевая коронка на имплантате Straumann" width="1024" height="768" loading="lazy">
+              </div>
+              <span class="compare-label label-before">До</span>
+              <span class="compare-label label-after">После</span>
+              <div class="compare-handle" aria-hidden="true"><span class="compare-grip"><svg class="icon"><use href="#i-drag"/></svg></span></div>
+              <input class="compare-range" type="range" min="0" max="100" value="50" step="0.5" aria-label="Сравнение фотографий до и после имплантации">
+            </div>
+            <div class="case-captions"><span>Отсутствие зуба более 2 лет</span><strong>Имплантат Straumann + цирконий</strong></div>
+            <div class="case-meta">
+              <span class="avatar" aria-hidden="true">ОК</span>
+              <div class="case-person"><strong>Ольга Калинина, 45 лет</strong><small>Лечащий врач: Соколов Д. А.</small></div>
+              <span class="stars" aria-label="Оценка 5 из 5"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>
+            </div>
+            <p class="case-text">«Очень боялась имплантации из-за страшных историй про боли и скрытые прайсы за винтики и анестезию. Дмитрий Александрович все объяснил на 3D-модели, составили договор на 62 000 ₽. Операция заняла всего 25 минут, вообще без боли. Прошло полгода — зуб как родной!»</p>
+            <div class="case-foot">
+              <span class="case-source"><svg class="icon"><use href="#i-shield"/></svg>Проверенный отзыв с ПроДокторов</span>
+              <strong class="case-total">Итог: 62 000 ₽</strong>
+            </div>
+          </article>
+        </div>
+
+        <div class="quotes-marquee reveal" aria-label="Короткие отзывы пациентов">
+          <div class="marquee" data-marquee data-speed="slow">
+            <div class="marquee-track quotes-track">
+              <span class="quote-pill">«Смета совпала до рубля» — Анна П.</span>
+              <span class="quote-pill">«Спасли зуб, который хотели удалить» — Игорь В.</span>
+              <span class="quote-pill">«Ребенок теперь сам просится к стоматологу» — Мария К.</span>
+              <span class="quote-pill">«Впервые без навязанных услуг» — Дмитрий Л.</span>
+              <span class="quote-pill">«Рассрочка без банка за 10 минут» — Сергей Н.</span>
+              <span class="quote-pill">«Фотоотчет прислали в тот же день» — Елена Т.</span>
+              <span class="quote-pill">«Смета совпала до рубля» — Анна П.</span>
+              <span class="quote-pill">«Спасли зуб, который хотели удалить» — Игорь В.</span>
+              <span class="quote-pill">«Ребенок теперь сам просится к стоматологу» — Мария К.</span>
+              <span class="quote-pill">«Впервые без навязанных услуг» — Дмитрий Л.</span>
+              <span class="quote-pill">«Рассрочка без банка за 10 минут» — Сергей Н.</span>
+              <span class="quote-pill">«Фотоотчет прислали в тот же день» — Елена Т.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container faq-container">
+        <div class="section-head reveal">
+          <div class="section-head-text">
+            <span class="eyebrow"><svg class="icon"><use href="#i-info"/></svg>Вопросы и ответы</span>
+            <h2 class="section-title">Частые вопросы о ценах и лечении</h2>
+          </div>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Почему смета не меняется после начала лечения?</span><svg class="icon"><use href="#i-chevron"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Перед лечением врач проводит полную диагностику: КТ, фотопротокол, осмотр под увеличением. Этого достаточно, чтобы увидеть все проблемы заранее. Стоимость фиксируется в договоре. Если в процессе выясняется, что лечение сложнее, чем планировалось, разницу оплачивает клиника — это наше письменное обязательство, а не рекламный слоган.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Что входит в цену «под ключ»?</span><svg class="icon"><use href="#i-chevron"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Работа врача и ассистента, анестезия, все расходные материалы и медикаменты, рентген-снимки и КТ по показаниям, временные конструкции, контрольные осмотры и снятие швов. В чеке не появляется ни одной позиции, которой не было в утвержденной смете.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Больно ли лечить зубы под микроскопом?</span><svg class="icon"><use href="#i-chevron"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Нет. Мы используем аппликационную анестезию (гель перед уколом) и современные анестетики последнего поколения — вы не чувствуете даже сам укол. Микроскоп позволяет работать максимально бережно: меньше препарирования, меньше вмешательства, быстрее восстановление. Для тревожных пациентов есть седация закисью азота.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Как работает рассрочка 0% без банка?</span><svg class="icon"><use href="#i-chevron"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Это внутренняя рассрочка клиники: стоимость лечения делится на 3–6 равных платежей без процентов, комиссий и участия банка. Оформляется за 10 минут по паспорту, первый платеж — в день начала лечения. Никаких скрытых страховок и переплат.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Что покрывает гарантия до 10 лет?</span><svg class="icon"><use href="#i-chevron"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Гарантийный талон выдается на руки вместе с паспортом изделия. На имплантаты Straumann — пожизненная гарантия производителя, на коронки и виниры — до 10 лет, на терапевтические реставрации — до 5 лет. При соблюдении рекомендаций и профилактических визитах раз в полгода любая гарантийная ситуация устраняется бесплатно.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false"><span>Можно ли получить второе мнение по чужой смете?</span><svg class="icon"><use href="#i-chevron"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Да, это одна из самых частых причин обращения к нам. Принесите план лечения и снимки из другой клиники — врач бесплатно разберет каждую позицию и скажет честно: что действительно необходимо, что можно сделать позже, а что навязано. В 40% случаев чужие сметы уменьшаются на треть без потери качества.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contacts & booking ===== -->
+    <section class="section contacts" id="contacts" data-spy>
+      <div class="container">
+        <div class="booking-card reveal">
+          <div class="booking-glow" aria-hidden="true"></div>
+          <div class="booking-info">
+            <span class="booking-badge"><i class="pulse-dot" aria-hidden="true"></i>Честная диагностика 0 ₽</span>
+            <h2>Запишитесь на первичный осмотр и план лечения</h2>
+            <p>В консультацию входит: визуальный осмотр, фотопротокол высокого разрешения, анализ КТ-снимка и подробная распечатанная смета в 2–3 вариантах под ваш бюджет.</p>
+            <ul class="booking-points">
+              <li><svg class="icon"><use href="#i-check-circle"/></svg>Никакого давления и «горящих предложений»</li>
+              <li><svg class="icon"><use href="#i-check-circle"/></svg>План лечения действует 30 дней с фиксацией цен</li>
+              <li><svg class="icon"><use href="#i-check-circle"/></svg>Чай, кофе и такси до клиники для первичных пациентов</li>
+            </ul>
+            <div class="booking-call">
+              <span>Не любите формы? Просто позвоните:</span>
+              <a href="tel:+74958904422">+7 (495) 890-44-22</a>
+            </div>
+          </div>
+
+          <div class="booking-form-wrap">
+            <form class="form" id="appointmentForm" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="f-direction">Направление лечения</label>
+                  <select id="f-direction" class="field-input">
+                    <option value="consult">Консультация и диагностика (0 ₽)</option>
+                    <option value="implant">Имплантация и протезирование</option>
+                    <option value="therapy">Лечение зубов / спасение каналов</option>
+                    <option value="ortho">Исправление прикуса (брекеты/каппы)</option>
+                    <option value="hygiene">Профессиональная гигиена</option>
+                    <option value="veneers">Виниры и эстетика</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-doctor">Пожелание по врачу</label>
+                  <select id="f-doctor" class="field-input">
+                    <option value="any">Любой свободный специалист</option>
+                    <option value="sokolov">Соколов Д. А. — главврач, хирург</option>
+                    <option value="voronova">Воронова Е. М. — терапевт-микроскопист</option>
+                    <option value="kovalev">Ковалев А. С. — ведущий ортодонт</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-date">Желаемая дата</label>
+                  <input id="f-date" class="field-input" type="date" required>
+                  <span class="field-error" data-error-for="f-date"></span>
+                </div>
+                <div class="field">
+                  <label for="f-time">Удобное время</label>
+                  <select id="f-time" class="field-input">
+                    <option value="morning">Утро (09:00 – 13:00)</option>
+                    <option value="day">День (13:00 – 17:00)</option>
+                    <option value="evening">Вечер (17:00 – 21:00)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="f-name">Ваше имя</label>
+                  <input id="f-name" class="field-input" type="text" placeholder="Константин" autocomplete="name" required>
+                  <span class="field-error" data-error-for="f-name"></span>
+                </div>
+                <div class="field">
+                  <label for="f-phone">Номер телефона</label>
+                  <input id="f-phone" class="field-input" type="tel" placeholder="+7 (999) 000-00-00" autocomplete="tel" inputmode="tel" required>
+                  <span class="field-error" data-error-for="f-phone"></span>
+                </div>
+                <div class="field field-full">
+                  <label for="f-comment">Что беспокоит? <small>(необязательно)</small></label>
+                  <textarea id="f-comment" class="field-input" rows="2" placeholder="Например: болит зуб снизу справа, нужна смета на имплантацию"></textarea>
+                </div>
+              </div>
+              <label class="consent">
+                <input id="f-consent" type="checkbox" checked>
+                <span>Соглашаюсь на обработку персональных данных. Мы не рассылаем спам.</span>
+              </label>
+              <button class="btn btn-primary btn-lg btn-block" id="submitBtn" type="submit">
+                <span class="btn-label">Забронировать честный прием</span>
+                <svg class="icon btn-lock"><use href="#i-lock"/></svg>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess" hidden>
+              <span class="success-icon"><svg class="icon"><use href="#i-check"/></svg></span>
+              <h3>Заявка принята!</h3>
+              <p class="success-lead">Администратор свяжется с вами в течение 5 минут и подтвердит запись.</p>
+              <dl class="success-summary" id="successSummary"></dl>
+              <button class="btn btn-light" type="button" id="newBooking">Новая запись</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards">
+            <div class="contact-card reveal">
+              <span class="contact-icon"><svg class="icon"><use href="#i-pin"/></svg></span>
+              <div><strong>Адрес клиники</strong><p>г. Москва, ул. Клиническая, д. 14, корп. 2<br><small>5 минут пешком от м. Белорусская</small></p></div>
+            </div>
+            <div class="contact-card reveal" style="--d:.06s">
+              <span class="contact-icon"><svg class="icon"><use href="#i-phone"/></svg></span>
+              <div><strong>Телефон и почта</strong><p><a href="tel:+74958904422">+7 (495) 890-44-22</a><br><a href="mailto:hello@chestnaya-dent.ru">hello@chestnaya-dent.ru</a></p></div>
+            </div>
+            <div class="contact-card reveal" style="--d:.12s">
+              <span class="contact-icon"><svg class="icon"><use href="#i-clock"/></svg></span>
+              <div><strong>Прием пациентов</strong><p>Ежедневно с 09:00 до 21:00<br><small>Без выходных и перерывов</small></p></div>
+            </div>
+          </div>
+          <div class="map-card reveal" style="--d:.1s">
+            <svg class="map-svg" viewBox="0 0 640 360" role="img" aria-label="Схема проезда: клиника на улице Клинической, рядом станция метро Белорусская">
+              <rect width="640" height="360" fill="#eef3f8"/>
+              <g class="map-blocks" fill="#e2eaf2">
+                <rect x="20" y="20" width="150" height="100" rx="10"/>
+                <rect x="200" y="20" width="180" height="100" rx="10"/>
+                <rect x="420" y="20" width="200" height="100" rx="10"/>
+                <rect x="20" y="160" width="150" height="120" rx="10"/>
+                <rect x="420" y="160" width="200" height="120" rx="10"/>
+                <rect x="200" y="240" width="180" height="100" rx="10"/>
+                <rect x="20" y="310" width="150" height="40" rx="10"/>
+                <rect x="420" y="310" width="200" height="40" rx="10"/>
+              </g>
+              <rect x="200" y="160" width="180" height="60" rx="10" fill="#d9ecdf"/>
+              <g class="map-park" fill="#bcdcc6">
+                <circle cx="235" cy="190" r="9"/><circle cx="265" cy="190" r="9"/><circle cx="295" cy="190" r="9"/><circle cx="325" cy="190" r="9"/><circle cx="355" cy="190" r="9"/>
+              </g>
+              <g stroke="#ffffff" stroke-width="14" stroke-linecap="round">
+                <line x1="0" y1="140" x2="640" y2="140"/>
+                <line x1="185" y1="0" x2="185" y2="360"/>
+                <line x1="400" y1="0" x2="400" y2="360"/>
+                <line x1="0" y1="295" x2="640" y2="295"/>
+              </g>
+              <g stroke="#c9d6e2" stroke-width="2" stroke-dasharray="6 8">
+                <line x1="0" y1="140" x2="640" y2="140"/>
+                <line x1="185" y1="0" x2="185" y2="360"/>
+                <line x1="400" y1="0" x2="400" y2="360"/>
+                <line x1="0" y1="295" x2="640" y2="295"/>
+              </g>
+              <path class="map-route" d="M 90 250 L 185 250 L 185 140 L 300 140 L 300 165" fill="none" stroke="#00658d" stroke-width="3.5" stroke-dasharray="8 7" stroke-linecap="round"/>
+              <g class="map-metro" transform="translate(90 250)">
+                <circle r="16" fill="#0a2540"/>
+                <text y="5.5" text-anchor="middle" fill="#fff" font-size="15" font-weight="800" font-family="Manrope, sans-serif">М</text>
+              </g>
+              <text x="90" y="290" text-anchor="middle" class="map-text" font-size="13" font-weight="700" fill="#43474d">Белорусская</text>
+              <text x="310" y="128" text-anchor="middle" class="map-text" font-size="12" fill="#74777e">ул. Клиническая</text>
+              <text x="290" y="205" text-anchor="middle" class="map-text" font-size="11" fill="#5c8a68">сквер</text>
+              <g class="map-marker" transform="translate(300 165)">
+                <circle class="marker-pulse" r="14" fill="#41befd" opacity="0.45"/>
+                <circle r="14" fill="#0a2540"/>
+                <path d="M0 -7c-2.4-2.2-5.6-2.9-7.7-1.6-2.6 1.5-3.7 4.2-3.2 7.2.4 2.7 1.3 4.6 1.7 7.2.4 2.6.6 6.2 2.3 6.5 1.7.3 2.2-3.2 2.9-5.6.4-1.4 1-2.6 2.7-2.6s2.3 1.2 2.7 2.6c.7 2.4 1.2 5.9 2.9 5.6 1.7-.3 1.9-3.9 2.3-6.5.4-2.6 1.3-4.5 1.7-7.2.5-3-.6-5.7-3.2-7.2C5.6-9.9 2.4-9.2 0-7z" fill="#41befd" transform="scale(0.9)"/>
+              </g>
+              <g transform="translate(300 132)">
+                <rect x="-98" y="-26" width="196" height="30" rx="15" fill="#0a2540"/>
+                <text y="-6.5" text-anchor="middle" fill="#ffffff" font-size="12.5" font-weight="700" font-family="Manrope, sans-serif">Честная стоматология</text>
+              </g>
+            </svg>
+            <div class="map-actions">
+              <a class="btn btn-primary btn-sm" href="https://yandex.ru/maps/?text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9A%D0%BB%D0%B8%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%2C%2014%D0%BA2" target="_blank" rel="noopener"><svg class="icon"><use href="#i-route"/></svg>Маршрут в Яндекс.Картах</a>
+              <a class="btn btn-light btn-sm" href="tel:+74958904422"><svg class="icon"><use href="#i-phone"/></svg>Позвонить</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="guarantees">
+          <div class="guarantee reveal">
+            <svg class="icon"><use href="#i-shield"/></svg>
+            <div><strong>Договор с пациентом</strong><span>Все финансовые обязательства заверены юридически</span></div>
+          </div>
+          <div class="guarantee reveal" style="--d:.07s">
+            <svg class="icon"><use href="#i-sterile"/></svg>
+            <div><strong>Стерильность 100%</strong><span>Программы АнтиСПИД и АнтиГепатит класса B</span></div>
+          </div>
+          <div class="guarantee reveal" style="--d:.14s">
+            <svg class="icon"><use href="#i-percent"/></svg>
+            <div><strong>Беспроцентная рассрочка</strong><span>Внутренняя рассрочка клиники 0% без банков</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand">
+            <span class="brand-badge brand-badge-logo"><img src="assets/img/brand-mark.png" alt="" width="565" height="230"></span>
+            <span class="brand-text"><strong>Честная стоматология</strong></span>
+          </span>
+          <p>Клиника доказательной стоматологии. Мы исключили навязанные процедуры, маркетинговые уловки и скрытые сметы. Лечим надежно, бережно и открыто.</p>
+          <span class="footer-trust"><svg class="icon"><use href="#i-shield"/></svg>Гарантия фиксированных честных цен по договору</span>
+        </div>
+        <nav class="footer-col" aria-label="Навигация в подвале">
+          <strong>Навигация</strong>
+          <a href="#main" data-scroll>Главная страница</a>
+          <a href="#services-and-prices" data-scroll>Услуги и прозрачные цены</a>
+          <a href="#about-clinic" data-scroll>О клинике и стандартах</a>
+          <a href="#doctors" data-scroll>Врачи и квалификация</a>
+          <a href="#honest-reviews" data-scroll>Честные отзывы пациентов</a>
+          <a href="#contacts" data-scroll>Контакты и запись</a>
+        </nav>
+        <div class="footer-col">
+          <strong>Контакты и график</strong>
+          <span class="footer-label">Телефон горячей линии</span>
+          <a class="footer-phone" href="tel:+74958904422">+7 (495) 890-44-22</a>
+          <span class="footer-label">Адрес клиники</span>
+          <span>г. Москва, ул. Клиническая, д. 14, корп. 2 (м. Белорусская)</span>
+          <span class="footer-label">Прием пациентов</span>
+          <span>Ежедневно с 09:00 до 21:00, без выходных</span>
+        </div>
+        <div class="footer-col">
+          <strong>Юридическая информация</strong>
+          <span>ООО «Честная Стоматология»<br>ОГРН: 1227700492810<br>ИНН: 7703492811 / КПП: 770301001</span>
+          <div class="license-box">
+            <strong>Медицинская лицензия</strong>
+            <span>№ Л041-01137-77/00349120 от 14.10.2021 г. Выдана Департаментом здравоохранения города Москвы.</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year">2026</span> Стоматологическая клиника «Честная стоматология». Все права защищены.<br class="footer-br"> Имеются противопоказания, необходима консультация специалиста.</p>
+        <div class="footer-legal">
+          <button type="button" data-legal="privacy">Политика конфиденциальности</button>
+          <button type="button" data-legal="offer">Публичная оферта</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Mobile sticky CTA ===== -->
+  <div class="mobile-cta" id="mobileCta">
+    <a class="btn btn-light" href="tel:+74958904422"><svg class="icon"><use href="#i-phone"/></svg>Позвонить</a>
+    <a class="btn btn-primary" href="#contacts" data-scroll><svg class="icon"><use href="#i-calendar"/></svg>Записаться</a>
+  </div>
+
+  <!-- ===== Back to top ===== -->
+  <button class="to-top" id="toTop" type="button" aria-label="Наверх"><svg class="icon"><use href="#i-arrow-up"/></svg></button>
+
+  <!-- ===== Toasts ===== -->
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <!-- ===== Legal modal ===== -->
+  <dialog class="modal" id="legalModal" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h3 id="modalTitle">Документ</h3>
+      <button class="icon-btn" type="button" id="modalClose" aria-label="Закрыть"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </dialog>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/versions.js" defer></script>
+</body>
+</html>
